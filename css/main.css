@@ -9,6 +9,6 @@ body {
   background-size: cover;
 }
 .parallax-img1 {
-  background-image: url('/img/b1.jpg');
+  background-image: url('../img/b1.jpg');
   min-height: 100%;
 }
