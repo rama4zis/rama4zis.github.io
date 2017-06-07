@@ -2,3 +2,12 @@ body {
   margin: 0;
   width: 100%;
 }
+.parallax-img1, .parallax-img2, .parallax-img3 {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 0.65;
+}
+.parallax-img1 {
+  background-image: url('../img/b1.jpg');
+  min-height: 100%;
+}
