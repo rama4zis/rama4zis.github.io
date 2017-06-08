@@ -1,14 +1,128 @@
-body {
+body, html {
+  max-height: 100%;
   margin: 0;
-  width: 100%;
+  font-family: 'Source Sans Pro',sans-serif;
 }
 .parallax-img1, .parallax-img2, .parallax-img3 {
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 .parallax-img1 {
-  background-image: url('../img/b1.jpg');
+  background-image: url("../img/b1.jpg");
+  min-height: 100vh;
+  display: flex;
+}
+.parallax-img2 {
+  background-image: url("../img/b2.jpg");
   min-height: 100%;
+}
+.parallax-img3 {
+  background-image: url("../img/b3.jpg");
+  min-height: 100%;
+}
+.parallax-caption {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  position: absolute;
+}
+.parallax-caption .click-scroll {
+  text-decoration: none;
+  color: #fff;
+}
+.parallax-caption > a {
+  border-radius: 10px;
+  background: #000;
+  font-size: 25px;
+  letter-spacing: 10px;
+  padding: 20px;
+  transition: color 1s, background 1s;
+}
+.parallax-caption > a:hover {
+  background: #fff;
+  color: #000;
+}
+.par-footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0px 0px;
+}
+.par-footer > h2 {
+  margin: 4px 10px;
+  color: #fff;
+}
+.par-footer > h2 > a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 1s, text-shadow 1s;
+}
+.par-footer > h2 > a:hover {
+  color: #0066ff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.section {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border-bottom: 3px solid #000;
+}
+.section .image {
+  padding: 0;
+  display: flex;
+}
+.left {
+  max-width: 50%;
+  order: 0;
+  margin: 0 10px;
+  align-self: center;
+}
+.right {
+  max-width: 50%;
+  order: 1;
+  margin: 0 10px;
+  align-self: center;
+}
+#SkillTitle {
+  width: 100%;
+  text-align: center;
+}
+.skill-content {
+  width: 75%;
+  padding: 10px 0;
+}
+.s {
+  width: 100%;
+  background: #363636;
+  font-size: 20px;
+}
+.skill {
+  text-align: right;
+  padding: 10px 15px;
+}
+.html {
+  width: 75%;
+  background: #26cc7c;
+}
+.css {
+  width: 50%;
+  background: #3290ff;
+}
+.java {
+  width: 30%;
+  background: #ff7c33;
+}
+.php {
+  width: 15%;
+  background: #ff0404;
 }
