@@ -133,39 +133,43 @@ body, html {
   margin: 0 15px;
 }
 #SkillTitle {
+  margin: 10px 0;
   width: 100%;
   text-align: center;
 }
 .skill-content {
+  display: block;
   width: 75%;
   max-width: 100%;
   padding: 10px;
   align-self: center;
 }
+.skill-content > h2 {
+  margin: 0;
+}
 .s {
   width: 100%;
   background: #363636;
-  font-size: 20px;
 }
 .skill {
   text-align: right;
-  padding: 10px 15px;
+  padding: 13px 15px;
 }
 .html {
   width: 75%;
-  background: #26cc7c;
+  background: #81bbff;
 }
 .css {
   width: 50%;
-  background: #3290ff;
+  background: #81bbff;
 }
 .java {
   width: 30%;
-  background: #ff7c33;
+  background: #81bbff;
 }
 .php {
   width: 15%;
-  background: #ff0404;
+  background: #81bbff;
 }
 
 
