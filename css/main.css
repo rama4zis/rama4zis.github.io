@@ -156,20 +156,20 @@ body, html {
   padding: 13px 15px;
 }
 .html {
-  width: 75%;
+  width: 70%;
   background: #81bbff;
 }
 .css {
   width: 50%;
-  background: #81bbff;
+  background: #81bbf;
 }
 .java {
   width: 30%;
-  background: #81bbff;
+  background: #81bbf;
 }
 .php {
   width: 15%;
-  background: #81bbff;
+  background: #81bbf;
 }
 
 
