@@ -1,0 +1,203 @@
+body, html {
+  max-height: 100%;
+  margin: 0;
+  font-family: 'Source Sans Pro',sans-serif;
+}
+.sideNav > a {
+  left: -200px;
+  text-decoration: none;
+  color: #363636;
+  position: fixed;
+  font-size: 20px;
+  text-align: center;
+  width: 200px;
+  z-index: 1;
+  transition: 1s;
+  color: #fff;
+}
+.sideNav > a:hover {
+  left: -10px;
+  opacity: 0.8;
+}
+.scTop {
+  top: 20px;
+  padding: 10px;
+  background: rgb(0, 138, 39);
+}
+.scAbout {
+  top: 65px;
+  padding: 10px;
+  background: #ef877a;
+}
+.scSkill {
+  top: 110px;
+  padding: 10px;
+  background: #696f86;
+}
+.parallax-img1, .parallax-img2, .parallax-img3 {
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallax-img1 {
+  background-image: url("../img/b1.jpg");
+  height: 100vh;
+}
+.parallax-img2 {
+  background-image: url("../img/b2.jpg");
+  height: 41.5vh;
+}
+.parallax-img3 {
+  background-image: url("../img/b3.jpg");
+  min-height: 100%;
+}
+.parallax-caption {
+  color: #fff;
+  text-align: center;
+  top: 50%;
+}
+.parallax-caption > span {
+  border-radius: 10px;
+  background: #000;
+  font-size: 25px;
+  letter-spacing: 10px;
+  padding: 20px;
+}
+.parallax-caption .click-scroll {
+  text-decoration: none;
+  color: #fff;
+}
+.parallax-caption > a {
+  border-radius: 10px;
+  background: #000;
+  font-size: 25px;
+  letter-spacing: 10px;
+  padding: 20px;
+  transition: color 1s, background 1s;
+}
+.parallax-caption > a:hover {
+  background: #fff;
+  color: #000;
+}
+.par-footer {
+  position: absolute;
+  padding: 0px 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.par-footer > h2 {
+  margin: 4px 10px;
+  color: #fff;
+}
+.par-footer > h2 > a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 1s, text-shadow 1s;
+}
+.par-footer > h2 > a:hover {
+  color: #0066ff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.section {
+  max-width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border-bottom: 3px solid #cdcdcd;
+}
+.image {
+  display: flex;
+  align-self: center;
+  max-width: 100%;
+  justify-content: center;
+}
+.left {
+  max-width: 50%;
+  order: 0;
+  align-self: center;
+  margin: 0 15px;
+}
+.right {
+  max-width: 50%;
+  order: 1;
+  align-self: center;
+  margin: 0 15px;
+}
+#SkillTitle {
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+.skill-content {
+  display: block;
+  width: 75%;
+  max-width: 100%;
+  padding: 10px;
+  align-self: center;
+}
+.skill-content > h2 {
+  margin: 0;
+}
+.s {
+  width: 100%;
+  background: #363636;
+}
+.skill {
+  text-align: right;
+  padding: 13px 15px;
+}
+.html {
+  width: 70%;
+  background: #81bbff;
+}
+.css {
+  width: 50%;
+  background: #81bbff;
+}
+.java {
+  width: 30%;
+  background: #81bbff;
+}
+.php {
+  width: 15%;
+  background: #81bbff;
+}
+
+
+
+
+
+
+
+/*==================================
+================RESPONSIVE==========
+====================================*/
+
+@media  only screen and (max-width:1024px){
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .section .image {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  .right, .left {
+    max-width: 100%;
+  }
+
+}
