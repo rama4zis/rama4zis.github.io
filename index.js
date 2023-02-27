@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'Hey there 👋',
         'I\'m Rama',
         'I\'m web developer',
+        'This is <a href="./project.html">project</a> that i\'ve done',
         'You can contact me at <a href="https://www.facebook.com/rama4zis" target="_blank">Facebook</a>',
         getCurrentTime(),
         '👀 Rama.'
@@ -74,6 +75,11 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .add({
             targets: createBubble(messages[5]),
+            translateX: 25,
+            opacity: 1,
+        })
+        .add({
+            targets: createBubble(messages[6]),
             translateX: 25,
             opacity: 1,
         })
