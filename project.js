@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const projects = [
         {
-            title: 'Surabaya Glory',
+            title: 'Toko Jasa dan Jual Beli Kebutuhan Kantor',
             img: './assets/images/project/surabayaglory.jpg',
             description: 'Toko online yang memberikan jasa dan menjual produk-produk kebutuhan kantor.',
             tags: ['PHP', 'Laravel', 'Tailwind CSS']
@@ -84,19 +84,20 @@ document.addEventListener('DOMContentLoaded', function () {
         containerEl.appendChild(createCard(project.title, project.img, project.description, project.tags));
     });
 
-
-
-    const tl = anime.timeline({
-        easing: 'easeOutExpo',
+    // hidden card before animation
+    const cardEl = document.querySelectorAll('.card');
+    cardEl.forEach(card => {
+        card.style.opacity = 0;
     });
 
-    tl
-        .add({
-            targets: '.card',
-            translateY: 25,
-            opacity: 1,
-            delay: anime.stagger(100),
-        })
+
+
+    anime({
+        targets: '.card',
+        opacity: 1,
+        delay: anime.stagger(1000, { start: 500 }),
+        easing: 'easeOutExpo',
+    });
 
 
 });

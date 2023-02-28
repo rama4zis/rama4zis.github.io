@@ -16,13 +16,35 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     let messages = [
-        'Hey there 👋',
-        'I\'m Rama',
-        'I\'m web developer',
-        'This is <a href="./project.html">project</a> that i\'ve done',
-        'You can contact me at <a href="https://www.facebook.com/rama4zis" target="_blank">Facebook</a>',
-        getCurrentTime(),
-        '👀 Rama.'
+        {
+            message: 'Hey there 👋',
+            delay: 500,
+        },
+        {
+            message: 'I\'m Rama',
+            delay: 500,
+        },
+        {
+            message: 'I\'m web developer',
+            delay: 500,
+        },
+        {
+            message: 'This is <a href="./project.html">project</a> that I\'ve done',
+            delay: 500,
+        },
+        {
+            message:
+                'You can contact me at <a href="https://www.facebook.com/rama4zis" target="_blank">Facebook</a>',
+            delay: 800,
+        },
+        {
+            message: getCurrentTime(),
+            delay: 500,
+        },
+        {
+            message: '👀 Rama.',
+            delay: 100,
+        }
     ];
 
     const createBubble = (message) => {
@@ -42,52 +64,16 @@ document.addEventListener('DOMContentLoaded', function () {
         easing: 'easeOutExpo',
     });
 
-    // Add children
-    tl
-        .add({
-            targets: createBubble(messages[0]),
+    for (let i = 0; i < messages.length; i++) {
+        tl.add({
+            targets: createBubble(messages[i].message),
             translateX: 25,
             opacity: 1,
-        })
-        .add({
-            targets: createBubble(messages[1]),
-            translateX: 25,
-            opacity: 1,
-            delay: 500,
-        })
-        .add({
-            targets: createBubble(messages[2]),
-            translateX: 25,
-            opacity: 1,
-            delay: 1500,
-        })
-        .add({
-            targets: createBubble(messages[3]),
-            translateX: 25,
-            opacity: 1,
-            delay: 500,
-        })
-        .add({
-            targets: createBubble(messages[4]),
-            translateX: 25,
-            opacity: 1,
-            delay: 500,
-        })
-        .add({
-            targets: createBubble(messages[5]),
-            translateX: 25,
-            opacity: 1,
-        })
-        .add({
-            targets: createBubble(messages[6]),
-            translateX: 25,
-            opacity: 1,
-        })
-        .add({
-            targets: '.button-container',
-            // translateX: 25,
-            opacity: 1,
-            delay: 500,
+            delay: messages[i].delay,
         });
+    }
 
+
+
+    
 });
